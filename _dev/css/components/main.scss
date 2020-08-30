@@ -1,0 +1,65 @@
+.home {
+    background-color: $primary;
+    padding-top: (44 / 16) * $spacer;
+
+    .top-bar {
+        padding-left: (40 / 16) * $spacer;
+
+    }
+
+    .top-bar__skip {
+        background: none;
+        border: none;
+        color: #777A7A;
+    }
+}
+
+.main {
+    &.--home {
+        .main__circle {
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle__icon {
+                width: 210px;
+                height: 210px;
+                border-radius: 50%;
+                background-image: url("./img/circle.png");
+            }
+        }
+
+        .main__content {
+            padding-left: (40 / 16) * $spacer;
+
+            .content__title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 56px;
+                line-height: 66px;
+                letter-spacing: 0.03em;
+            }
+
+            .content__subtitle {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 56px;
+                line-height: 66px;
+                letter-spacing: 0.03em;
+                margin-bottom: 141px;
+            }
+        }
+
+        .main__controls {
+            padding-left: (40 / 16) * $spacer;
+
+            .controls__get-started {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+    }
+}
